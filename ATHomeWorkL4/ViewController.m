@@ -43,7 +43,7 @@
     UIImage *teaPotImg = [UIImage imageNamed:@"Чайник"];
     UIImage *microWaveImg = [UIImage imageNamed:@"Микроволновка"];
     
-    [self.viewArray addObject: [[ViewItem alloc] initWithFullData:@"Теливизор" itemPrice: @"123" itemDescription:teleDesc itemImg:teleImg]];
+    [self.viewArray addObject: [[ViewItem alloc] initWithFullData:@"Телeвизор" itemPrice: @"123" itemDescription:teleDesc itemImg:teleImg]];
     [self.viewArray addObject: [[ViewItem alloc] initWithFullData:@"Утюг" itemPrice: @"3434" itemDescription:ironDesc itemImg:ironImg]];
     [self.viewArray addObject: [[ViewItem alloc] initWithFullData:@"Чайник" itemPrice: @"5343"itemDescription:teaPotDesc itemImg:teaPotImg]];
     [self.viewArray addObject: [[ViewItem alloc] initWithFullData:@"Микроволновая печь" itemPrice: @"2453" itemDescription:microWaveDesc itemImg:microWaveImg]];
@@ -84,7 +84,7 @@
     
     cell.textLabel.text = item.itemName;
     cell.detailTextLabel.text = item.itemPrice;
-    
+    cell.imageView.image = item.itemImg;
 //    NSLog(@"%@",item.itemPrice);
     
     return cell;
