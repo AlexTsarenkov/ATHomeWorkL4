@@ -13,10 +13,17 @@
 		931BD94A1AD5C1A3009CA0BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931BD9491AD5C1A3009CA0BC /* CoreGraphics.framework */; };
 		931BD94C1AD5C1B5009CA0BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931BD94B1AD5C1B5009CA0BC /* UIKit.framework */; };
 		931BD9541AD674C9009CA0BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931BD9531AD674C9009CA0BC /* DetailViewController.m */; };
-		931BD9591AD6B5FD009CA0BC /* Микроволновка.png in Resources */ = {isa = PBXBuildFile; fileRef = 931BD9551AD6B5FD009CA0BC /* Микроволновка.png */; };
-		931BD95A1AD6B5FD009CA0BC /* Телевизор.png in Resources */ = {isa = PBXBuildFile; fileRef = 931BD9561AD6B5FD009CA0BC /* Телевизор.png */; };
-		931BD95B1AD6B5FD009CA0BC /* Утюг.png in Resources */ = {isa = PBXBuildFile; fileRef = 931BD9571AD6B5FD009CA0BC /* Утюг.png */; };
 		931BD95C1AD6B5FD009CA0BC /* Чайник.png in Resources */ = {isa = PBXBuildFile; fileRef = 931BD9581AD6B5FD009CA0BC /* Чайник.png */; };
+		935541561ADBCA76004270BB /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 935541551ADBCA76004270BB /* CustomTableViewCell.m */; };
+		9355415A1ADBCF81004270BB /* Телевизор.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541571ADBCF81004270BB /* Телевизор.png */; };
+		9355415B1ADBCF81004270BB /* Микроволновка.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541581ADBCF81004270BB /* Микроволновка.png */; };
+		9355415C1ADBCF81004270BB /* Утюг.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541591ADBCF81004270BB /* Утюг.png */; };
+		935541601ADBEE72004270BB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355415F1ADBEE72004270BB /* MainViewController.m */; };
+		935541631ADBF959004270BB /* ViewItemMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 935541621ADBF959004270BB /* ViewItemMusic.m */; };
+		935541681ADBFE9C004270BB /* Барабаны.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541641ADBFE9C004270BB /* Барабаны.png */; };
+		935541691ADBFE9C004270BB /* Синтезатор.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541651ADBFE9C004270BB /* Синтезатор.png */; };
+		9355416A1ADBFE9C004270BB /* Гитара.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541661ADBFE9C004270BB /* Гитара.png */; };
+		9355416B1ADBFE9C004270BB /* Труба.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541671ADBFE9C004270BB /* Труба.png */; };
 		93D559C81AD526D0004BF6E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D559C71AD526D0004BF6E9 /* main.m */; };
 		93D559CB1AD526D0004BF6E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D559CA1AD526D0004BF6E9 /* AppDelegate.m */; };
 		93D559CE1AD526D0004BF6E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D559CD1AD526D0004BF6E9 /* ViewController.m */; };
@@ -45,10 +52,20 @@
 		931BD94B1AD5C1B5009CA0BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		931BD9521AD674C9009CA0BC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		931BD9531AD674C9009CA0BC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		931BD9551AD6B5FD009CA0BC /* Микроволновка.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Микроволновка.png"; sourceTree = "<group>"; };
-		931BD9561AD6B5FD009CA0BC /* Телевизор.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Телевизор.png"; sourceTree = "<group>"; };
-		931BD9571AD6B5FD009CA0BC /* Утюг.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Утюг.png"; sourceTree = "<group>"; };
 		931BD9581AD6B5FD009CA0BC /* Чайник.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Чайник.png"; sourceTree = "<group>"; };
+		935541541ADBCA76004270BB /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		935541551ADBCA76004270BB /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		935541571ADBCF81004270BB /* Телевизор.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Телевизор.png"; sourceTree = "<group>"; };
+		935541581ADBCF81004270BB /* Микроволновка.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Микроволновка.png"; sourceTree = "<group>"; };
+		935541591ADBCF81004270BB /* Утюг.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Утюг.png"; sourceTree = "<group>"; };
+		9355415E1ADBEE72004270BB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9355415F1ADBEE72004270BB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		935541611ADBF959004270BB /* ViewItemMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewItemMusic.h; sourceTree = "<group>"; };
+		935541621ADBF959004270BB /* ViewItemMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewItemMusic.m; sourceTree = "<group>"; };
+		935541641ADBFE9C004270BB /* Барабаны.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Барабаны.png"; sourceTree = "<group>"; };
+		935541651ADBFE9C004270BB /* Синтезатор.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Синтезатор.png"; sourceTree = "<group>"; };
+		935541661ADBFE9C004270BB /* Гитара.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Гитара.png"; sourceTree = "<group>"; };
+		935541671ADBFE9C004270BB /* Труба.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Труба.png"; sourceTree = "<group>"; };
 		93D559C21AD526D0004BF6E9 /* ATHomeWorkL4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATHomeWorkL4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D559C61AD526D0004BF6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93D559C71AD526D0004BF6E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +117,8 @@
 			children = (
 				93D559EB1AD52744004BF6E9 /* ViewItem.h */,
 				93D559EC1AD52744004BF6E9 /* ViewItem.m */,
+				935541611ADBF959004270BB /* ViewItemMusic.h */,
+				935541621ADBF959004270BB /* ViewItemMusic.m */,
 			);
 			name = "Item Class";
 			sourceTree = "<group>";
@@ -116,12 +135,34 @@
 		931BD95D1AD6B601009CA0BC /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				931BD9551AD6B5FD009CA0BC /* Микроволновка.png */,
-				931BD9561AD6B5FD009CA0BC /* Телевизор.png */,
-				931BD9571AD6B5FD009CA0BC /* Утюг.png */,
+				935541641ADBFE9C004270BB /* Барабаны.png */,
+				935541651ADBFE9C004270BB /* Синтезатор.png */,
+				935541661ADBFE9C004270BB /* Гитара.png */,
+				935541671ADBFE9C004270BB /* Труба.png */,
+				935541571ADBCF81004270BB /* Телевизор.png */,
+				935541581ADBCF81004270BB /* Микроволновка.png */,
+				935541591ADBCF81004270BB /* Утюг.png */,
 				931BD9581AD6B5FD009CA0BC /* Чайник.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		935541531ADBC9F6004270BB /* CellViewController */ = {
+			isa = PBXGroup;
+			children = (
+				935541541ADBCA76004270BB /* CustomTableViewCell.h */,
+				935541551ADBCA76004270BB /* CustomTableViewCell.m */,
+			);
+			name = CellViewController;
+			sourceTree = "<group>";
+		};
+		9355415D1ADBEE42004270BB /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9355415E1ADBEE72004270BB /* MainViewController.h */,
+				9355415F1ADBEE72004270BB /* MainViewController.m */,
+			);
+			name = MainViewController;
 			sourceTree = "<group>";
 		};
 		93D559B91AD526D0004BF6E9 = {
@@ -148,6 +189,8 @@
 		93D559C41AD526D0004BF6E9 /* ATHomeWorkL4 */ = {
 			isa = PBXGroup;
 			children = (
+				9355415D1ADBEE42004270BB /* MainViewController */,
+				935541531ADBC9F6004270BB /* CellViewController */,
 				930BA27A1AD702E20068CB42 /* AddItem View Class */,
 				931BD95D1AD6B601009CA0BC /* Images */,
 				931BD94D1AD673B2009CA0BC /* Item Class */,
@@ -270,13 +313,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9355415C1ADBCF81004270BB /* Утюг.png in Resources */,
+				935541691ADBFE9C004270BB /* Синтезатор.png in Resources */,
 				931BD95C1AD6B5FD009CA0BC /* Чайник.png in Resources */,
+				935541681ADBFE9C004270BB /* Барабаны.png in Resources */,
+				9355416A1ADBFE9C004270BB /* Гитара.png in Resources */,
+				9355415A1ADBCF81004270BB /* Телевизор.png in Resources */,
 				93D559D61AD526D0004BF6E9 /* LaunchScreen.xib in Resources */,
-				931BD95A1AD6B5FD009CA0BC /* Телевизор.png in Resources */,
 				930BA2831AD707090068CB42 /* Main.storyboard in Resources */,
-				931BD95B1AD6B5FD009CA0BC /* Утюг.png in Resources */,
-				931BD9591AD6B5FD009CA0BC /* Микроволновка.png in Resources */,
+				9355416B1ADBFE9C004270BB /* Труба.png in Resources */,
 				93D559D31AD526D0004BF6E9 /* Images.xcassets in Resources */,
+				9355415B1ADBCF81004270BB /* Микроволновка.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +342,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				931BD9541AD674C9009CA0BC /* DetailViewController.m in Sources */,
+				935541561ADBCA76004270BB /* CustomTableViewCell.m in Sources */,
 				930BA2791AD702D80068CB42 /* AddItemViewController.m in Sources */,
+				935541601ADBEE72004270BB /* MainViewController.m in Sources */,
 				93D559CE1AD526D0004BF6E9 /* ViewController.m in Sources */,
+				935541631ADBF959004270BB /* ViewItemMusic.m in Sources */,
 				93D559CB1AD526D0004BF6E9 /* AppDelegate.m in Sources */,
 				93D559C81AD526D0004BF6E9 /* main.m in Sources */,
 				93D559ED1AD52744004BF6E9 /* ViewItem.m in Sources */,

@@ -11,7 +11,9 @@
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property(strong,nonatomic) NSMutableArray* viewArray;
+@property BOOL isTech;
 
+- (IBAction)backButtonClick:(id)sender;
 
 @end
 

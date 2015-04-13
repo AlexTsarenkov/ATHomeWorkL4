@@ -20,4 +20,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *label_Price;
 @property (strong, nonatomic) IBOutlet UITextView *label_Description;
 
+- (IBAction)buttonBackClick:(id)sender;
 @end
