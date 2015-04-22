@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ViewItem.h"
-#import "ViewItemMusic.h"
+
 
 @protocol MakeArrayDelegate;
 

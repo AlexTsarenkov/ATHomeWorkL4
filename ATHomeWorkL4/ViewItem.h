@@ -24,6 +24,7 @@
                  itemDescription:(NSString*) itemDescription
                          itemImg:(UIImage *) itemImg;
 
-+ (void) fillArray: (NSMutableArray *) array;
++ (void) fillArrayTech: (NSMutableArray *) array;
++ (void) fillArrayMusic: (NSMutableArray *) array;
 
 @end

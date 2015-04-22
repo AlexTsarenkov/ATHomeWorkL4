@@ -23,18 +23,14 @@
 //---------------------------------------------------------------------------------------------------
 
 -(void) viewWillAppear:(BOOL)animated{
-    [NSNotificationCenter createNotification:NOTIF_ARRAY selector:@selector(performNotification:) object:self];
+    [NSNotificationCenter createNotification:NOTIF_ARRAY selector:@selector(performNotificationReload:) object:self];
+//    [NSNotificationCenter createNotification:NOTIF_ADD selector:@selector(performNotificationAdd:) object:self];
 }
 //---------------------------------------------------------------------------------------------------
 
 -(void) viewWillDisappear:(BOOL)animated{
     [NSNotificationCenter removeNotification];
 }
-//---------------------------------------------------------------------------------------------------
- - (void) performNotification: (NSNotification *) notif {
-     self.viewArray = [notif.userInfo objectForKey:KEY_FOR_ARRAY];
-     [self reloadTableView];
- }
 //---------------------------------------------------------------------------------------------------
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,7 +51,6 @@
     }
     //NSLog(@"%@",array);
     
-    
 }
 //---------------------------------------------------------------------------------------------------
 -(void) reloadTableView {
@@ -69,6 +64,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -UITableViewDelegate
 //---------------------------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -112,8 +108,10 @@
     
     [self.navigationController pushViewController:detail animated:YES];
     
-//---------------------------------------------------------------------------------------------------
 }
+//---------------------------------------------------------------------------------------------------
+
+#pragma mark -IBAction events
 - (IBAction)backButtonClick:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -127,32 +125,38 @@
         self.musicButton.enabled = YES;
         self.techButton.enabled = NO;
         [mkArray makeArrayTechNotification];
-
+        
     }
     else
     {
         self.musicButton.enabled = NO;
         self.techButton.enabled = YES;
         [mkArray makeArrayMusicNotification];
-     
+        
     }
 }
+//---------------------------------------------------------------------------------------------------
+//- (IBAction)addButtonClick:(id)sender {
+//    ViewController * view = [self.storyboard instantiateViewControllerWithIdentifier:@"addView"];
+//
+//    [self.navigationController pushViewController:view animated:YES];
+//}
+
 //---------------------------------------------------------------------------------------------------
 - (IBAction)techButtonClick:(id)sender {
     MakeArray *mkArray = [[MakeArray alloc] init];
     [mkArray setDelegate:self];
     [mkArray makeArrayTech];
-     
+    
 }
 //---------------------------------------------------------------------------------------------------
 - (IBAction)musicButtonClick:(id)sender {
     MakeArray *mkArray = [[MakeArray alloc] init];
     [mkArray setDelegate:self];
     [mkArray makeArrayMusic];
-
- 
+    
+    
 }
-
 #pragma mark -MakeArrayDelegate
 
 - (void) makeArrayTechReady:(MakeArray*) obj array:(NSMutableArray*) techArray{
@@ -170,6 +174,19 @@
     self.switchOutlet.on = NO;
     [self reloadTableView];
 }
+
+#pragma mark -NSNotificationCenter+NotificationsOptions
+
+//---------------------------------------------------------------------------------------------------
+- (void) performNotificationReload: (NSNotification *) notif {
+    self.viewArray = [notif.userInfo objectForKey:KEY_FOR_ARRAY];
+    [self reloadTableView];
+}
+//---------------------------------------------------------------------------------------------------
+//-(void) performNotificationAdd: (NSNotification*) notif {
+//    [self.viewArray addObject:[notif.userInfo objectForKey:KEY_FOR_ADD_ITEM]];
+//    [self reloadTableView];
+//}
 
 @end
 

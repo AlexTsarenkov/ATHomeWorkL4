@@ -11,7 +11,7 @@
 #import "ViewItem.h"
 #import "DetailViewController.h"
 #import "CustomTableViewCell.h"
-#import "ViewItemMusic.h"
+
 
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MakeArrayDelegate>
@@ -21,6 +21,8 @@
 
 - (IBAction)backButtonClick:(id)sender;
 - (IBAction)switchClick:(id)sender;
+- (IBAction)addButtonClick:(id)sender;
+
 
 @end
 

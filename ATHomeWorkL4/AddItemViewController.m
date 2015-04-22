@@ -46,7 +46,8 @@
     item.itemPrice = self.text_ItemPrice.text;
     item.itemDescription = self.text_ItemDesc.text;
     
-    [view.viewArray addObject:item];
+    NSDictionary *dict =  [[NSDictionary alloc] initWithObjectsAndKeys:item, KEY_FOR_ADD_ITEM, nil];
+    [NSNotificationCenter callNotificationWithData:NOTIF_ADD userInfoDictionary:dict];
     
     [self.navigationController pushViewController:view animated:YES];
 }

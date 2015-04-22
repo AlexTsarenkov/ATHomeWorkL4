@@ -10,9 +10,7 @@
 
 @interface AddItemViewController : UIViewController
 
-//@property (strong, nonatomic) IBOutlet UITextField *text_ItemName;
-//@property (strong, nonatomic) IBOutlet UITextField *text_ItemPrice;
-//@property (strong, nonatomic) IBOutlet UITextView *text_ItemDesc;
+
 @property (strong, nonatomic) IBOutlet UITextField *text_ItemName;
 @property (strong, nonatomic) IBOutlet UITextField *text_ItemPrice;
 @property (strong, nonatomic) IBOutlet UITextView *text_ItemDesc;

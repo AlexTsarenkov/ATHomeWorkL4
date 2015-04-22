@@ -19,7 +19,6 @@
 		9355415B1ADBCF81004270BB /* Микроволновка.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541581ADBCF81004270BB /* Микроволновка.png */; };
 		9355415C1ADBCF81004270BB /* Утюг.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541591ADBCF81004270BB /* Утюг.png */; };
 		935541601ADBEE72004270BB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355415F1ADBEE72004270BB /* MainViewController.m */; };
-		935541631ADBF959004270BB /* ViewItemMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 935541621ADBF959004270BB /* ViewItemMusic.m */; };
 		935541681ADBFE9C004270BB /* Барабаны.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541641ADBFE9C004270BB /* Барабаны.png */; };
 		935541691ADBFE9C004270BB /* Синтезатор.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541651ADBFE9C004270BB /* Синтезатор.png */; };
 		9355416A1ADBFE9C004270BB /* Гитара.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541661ADBFE9C004270BB /* Гитара.png */; };
@@ -62,8 +61,6 @@
 		935541591ADBCF81004270BB /* Утюг.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Утюг.png"; sourceTree = "<group>"; };
 		9355415E1ADBEE72004270BB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9355415F1ADBEE72004270BB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		935541611ADBF959004270BB /* ViewItemMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewItemMusic.h; sourceTree = "<group>"; };
-		935541621ADBF959004270BB /* ViewItemMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewItemMusic.m; sourceTree = "<group>"; };
 		935541641ADBFE9C004270BB /* Барабаны.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Барабаны.png"; sourceTree = "<group>"; };
 		935541651ADBFE9C004270BB /* Синтезатор.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Синтезатор.png"; sourceTree = "<group>"; };
 		935541661ADBFE9C004270BB /* Гитара.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Гитара.png"; sourceTree = "<group>"; };
@@ -125,8 +122,6 @@
 			children = (
 				93D559EB1AD52744004BF6E9 /* ViewItem.h */,
 				93D559EC1AD52744004BF6E9 /* ViewItem.m */,
-				935541611ADBF959004270BB /* ViewItemMusic.h */,
-				935541621ADBF959004270BB /* ViewItemMusic.m */,
 			);
 			name = "Item Class";
 			sourceTree = "<group>";
@@ -370,7 +365,6 @@
 				930BA2791AD702D80068CB42 /* AddItemViewController.m in Sources */,
 				935541601ADBEE72004270BB /* MainViewController.m in Sources */,
 				93D559CE1AD526D0004BF6E9 /* ViewController.m in Sources */,
-				935541631ADBF959004270BB /* ViewItemMusic.m in Sources */,
 				93D559CB1AD526D0004BF6E9 /* AppDelegate.m in Sources */,
 				93D559C81AD526D0004BF6E9 /* main.m in Sources */,
 				93D559ED1AD52744004BF6E9 /* ViewItem.m in Sources */,

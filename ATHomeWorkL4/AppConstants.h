@@ -10,10 +10,12 @@
 #define ATHomeWorkL4_AppConstants_h
 
 // константы для dictionary
-#define KEY_FOR_ARRAY@"keyArray"
+#define KEY_FOR_ARRAY @"keyArray"
+#define KEY_FOR_ADD_ITEM @"keyItem"
 
 // имена нотификаций
 #define NOTIF_ARRAY @"arrayNotif"
+#define NOTIF_ADD @"addNotif"
 
 
 #endif
