@@ -7,24 +7,34 @@
 //
 
 #import "ViewController.h"
-#import "ViewItem.h"
-#import "DetailViewController.h"
-#include "CustomTableViewCell.h"
-#include "ViewItemMusic.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UIButton *techButton;
 @property (strong, nonatomic) IBOutlet UIButton *musicButton;
 @property (strong, nonatomic) IBOutlet UITableView *tableViewOutlet;
+@property (strong, nonatomic) IBOutlet UISwitch *switchOutlet;
 
 - (IBAction)techButtonClick:(id)sender;
 - (IBAction)musicButtonClick:(id)sender;
 @end
 
 @implementation ViewController
+//---------------------------------------------------------------------------------------------------
 
+-(void) viewWillAppear:(BOOL)animated{
+    [NSNotificationCenter createNotification:NOTIF_ARRAY selector:@selector(performNotification:) object:self];
+}
+//---------------------------------------------------------------------------------------------------
 
+-(void) viewWillDisappear:(BOOL)animated{
+    [NSNotificationCenter removeNotification];
+}
+//---------------------------------------------------------------------------------------------------
+ - (void) performNotification: (NSNotification *) notif {
+     self.viewArray = [notif.userInfo objectForKey:KEY_FOR_ARRAY];
+     [self reloadTableView];
+ }
 //---------------------------------------------------------------------------------------------------
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,10 +42,20 @@
     self.viewArray = [[NSMutableArray alloc] init];
     
     if(self.isTech)
-        [ViewItem fillArray:self.viewArray];
+    {
+        MakeArray *mkArray = [[MakeArray alloc] init];
+        [mkArray setDelegate:self];
+        [mkArray makeArrayTech];
+    }
     else
-        [ViewItemMusic fillArray:self.viewArray];
+    {
+        MakeArray *mkArray = [[MakeArray alloc] init];
+        [mkArray setDelegate:self];
+        [mkArray makeArrayMusic];
+    }
     //NSLog(@"%@",array);
+    
+    
 }
 //---------------------------------------------------------------------------------------------------
 -(void) reloadTableView {
@@ -97,20 +117,59 @@
 - (IBAction)backButtonClick:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (IBAction)switchClick:(id)sender {
+    
+    UISwitch *switchUI = (id) sender;
+    MakeArray *mkArray = [[MakeArray alloc] init];
+    
+    if(switchUI.on){
+        self.musicButton.enabled = YES;
+        self.techButton.enabled = NO;
+        [mkArray makeArrayTechNotification];
+
+    }
+    else
+    {
+        self.musicButton.enabled = NO;
+        self.techButton.enabled = YES;
+        [mkArray makeArrayMusicNotification];
+     
+    }
+}
 //---------------------------------------------------------------------------------------------------
 - (IBAction)techButtonClick:(id)sender {
-    [self.viewArray removeAllObjects];
-    [ViewItem fillArray:self.viewArray];
-    self.musicButton.enabled = YES;
-    self.techButton.enabled = NO;
-    [self reloadTableView];
+    MakeArray *mkArray = [[MakeArray alloc] init];
+    [mkArray setDelegate:self];
+    [mkArray makeArrayTech];
+     
 }
 //---------------------------------------------------------------------------------------------------
 - (IBAction)musicButtonClick:(id)sender {
-    [self.viewArray removeAllObjects];
-    [ViewItemMusic fillArray:self.viewArray];
-    self.musicButton.enabled = NO;
-    self.techButton.enabled = YES;
+    MakeArray *mkArray = [[MakeArray alloc] init];
+    [mkArray setDelegate:self];
+    [mkArray makeArrayMusic];
+
+ 
+}
+
+#pragma mark -MakeArrayDelegate
+
+- (void) makeArrayTechReady:(MakeArray*) obj array:(NSMutableArray*) techArray{
+    self.viewArray = techArray;
+    self.musicButton.enabled = YES;
+    self.techButton.enabled = NO;
+    self.switchOutlet.on = YES;
     [self reloadTableView];
 }
+
+- (void) makeArrayMusicReady:(MakeArray*) obj array:(NSMutableArray*) musicArray{
+    self.viewArray = musicArray;
+    self.musicButton.enabled = NO;
+    self.techButton.enabled = YES;
+    self.switchOutlet.on = NO;
+    [self reloadTableView];
+}
+
 @end
+

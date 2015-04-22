@@ -24,6 +24,8 @@
 		935541691ADBFE9C004270BB /* Синтезатор.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541651ADBFE9C004270BB /* Синтезатор.png */; };
 		9355416A1ADBFE9C004270BB /* Гитара.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541661ADBFE9C004270BB /* Гитара.png */; };
 		9355416B1ADBFE9C004270BB /* Труба.png in Resources */ = {isa = PBXBuildFile; fileRef = 935541671ADBFE9C004270BB /* Труба.png */; };
+		938A6D9C1AE5469600EDE58D /* MakeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 938A6D9B1AE5469600EDE58D /* MakeArray.m */; };
+		938A6DA21AE658ED00EDE58D /* NSNotificationCenter+NotificationsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 938A6DA11AE658ED00EDE58D /* NSNotificationCenter+NotificationsOptions.m */; };
 		93D559C81AD526D0004BF6E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D559C71AD526D0004BF6E9 /* main.m */; };
 		93D559CB1AD526D0004BF6E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D559CA1AD526D0004BF6E9 /* AppDelegate.m */; };
 		93D559CE1AD526D0004BF6E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D559CD1AD526D0004BF6E9 /* ViewController.m */; };
@@ -66,6 +68,12 @@
 		935541651ADBFE9C004270BB /* Синтезатор.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Синтезатор.png"; sourceTree = "<group>"; };
 		935541661ADBFE9C004270BB /* Гитара.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Гитара.png"; sourceTree = "<group>"; };
 		935541671ADBFE9C004270BB /* Труба.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Труба.png"; sourceTree = "<group>"; };
+		938A6D9A1AE5469600EDE58D /* MakeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeArray.h; sourceTree = "<group>"; };
+		938A6D9B1AE5469600EDE58D /* MakeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeArray.m; sourceTree = "<group>"; };
+		938A6D9D1AE64E7700EDE58D /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = ATHomeWorkL4/AppConstants.h; sourceTree = "<group>"; };
+		938A6D9F1AE64F7800EDE58D /* ATHomewWorkL4.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ATHomewWorkL4.pch; path = ATHomeWorkL4/ATHomewWorkL4.pch; sourceTree = "<group>"; };
+		938A6DA01AE658ED00EDE58D /* NSNotificationCenter+NotificationsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+NotificationsOptions.h"; sourceTree = "<group>"; };
+		938A6DA11AE658ED00EDE58D /* NSNotificationCenter+NotificationsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+NotificationsOptions.m"; sourceTree = "<group>"; };
 		93D559C21AD526D0004BF6E9 /* ATHomeWorkL4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATHomeWorkL4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D559C61AD526D0004BF6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93D559C71AD526D0004BF6E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -165,9 +173,22 @@
 			name = MainViewController;
 			sourceTree = "<group>";
 		};
+		938A6D9E1AE64E8500EDE58D /* MakeArrays */ = {
+			isa = PBXGroup;
+			children = (
+				938A6D9A1AE5469600EDE58D /* MakeArray.h */,
+				938A6D9B1AE5469600EDE58D /* MakeArray.m */,
+			);
+			name = MakeArrays;
+			sourceTree = "<group>";
+		};
 		93D559B91AD526D0004BF6E9 = {
 			isa = PBXGroup;
 			children = (
+				938A6DA01AE658ED00EDE58D /* NSNotificationCenter+NotificationsOptions.h */,
+				938A6DA11AE658ED00EDE58D /* NSNotificationCenter+NotificationsOptions.m */,
+				938A6D9F1AE64F7800EDE58D /* ATHomewWorkL4.pch */,
+				938A6D9D1AE64E7700EDE58D /* AppConstants.h */,
 				931BD94B1AD5C1B5009CA0BC /* UIKit.framework */,
 				931BD9491AD5C1A3009CA0BC /* CoreGraphics.framework */,
 				931BD9471AD5C19D009CA0BC /* Foundation.framework */,
@@ -189,6 +210,7 @@
 		93D559C41AD526D0004BF6E9 /* ATHomeWorkL4 */ = {
 			isa = PBXGroup;
 			children = (
+				938A6D9E1AE64E8500EDE58D /* MakeArrays */,
 				9355415D1ADBEE42004270BB /* MainViewController */,
 				935541531ADBC9F6004270BB /* CellViewController */,
 				930BA27A1AD702E20068CB42 /* AddItem View Class */,
@@ -341,7 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938A6DA21AE658ED00EDE58D /* NSNotificationCenter+NotificationsOptions.m in Sources */,
 				931BD9541AD674C9009CA0BC /* DetailViewController.m in Sources */,
+				938A6D9C1AE5469600EDE58D /* MakeArray.m in Sources */,
 				935541561ADBCA76004270BB /* CustomTableViewCell.m in Sources */,
 				930BA2791AD702D80068CB42 /* AddItemViewController.m in Sources */,
 				935541601ADBEE72004270BB /* MainViewController.m in Sources */,
@@ -471,6 +495,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/alexeytsarenkov/Documents/GeekBrains/ATHomeWorkL4/ATHomeWorkL4/ATHomewWorkL4.pch;
 				INFOPLIST_FILE = ATHomeWorkL4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +507,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/alexeytsarenkov/Documents/GeekBrains/ATHomeWorkL4/ATHomeWorkL4/ATHomewWorkL4.pch;
 				INFOPLIST_FILE = ATHomeWorkL4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

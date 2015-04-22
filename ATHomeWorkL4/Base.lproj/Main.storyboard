@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tbK-sD-UWQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tbK-sD-UWQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -85,20 +85,8 @@
                                             <action selector="buttonBackClick:" destination="iMb-n3-JeE" eventType="touchUpInside" id="hIG-Yj-GFy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-v9-1yE">
-                                        <rect key="frame" x="256" y="26" width="88" height="30"/>
-                                        <state key="normal" title="Музыка">
-                                            <color key="titleColor" red="1" green="0.16368016799999999" blue="0.093050582049999997" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="musicButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fKT-XG-SBJ"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-xU-5Au">
-                                        <rect key="frame" x="165" y="26" width="83" height="30"/>
+                                        <rect key="frame" x="86" y="26" width="83" height="30"/>
                                         <state key="normal" title="Техника">
                                             <color key="titleColor" red="1" green="0.16368016799999999" blue="0.093050582049999997" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,6 +96,26 @@
                                         </state>
                                         <connections>
                                             <action selector="techButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Bc-MD-ANP"/>
+                                        </connections>
+                                    </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDh-hH-AuK">
+                                        <rect key="frame" x="163" y="25" width="51" height="31"/>
+                                        <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="thumbTintColor" red="1" green="0.16368016799999999" blue="0.093050582049999997" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="switchClick:" destination="vXZ-lx-hvc" eventType="valueChanged" id="saL-5D-J7l"/>
+                                        </connections>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-v9-1yE">
+                                        <rect key="frame" x="204" y="26" width="88" height="30"/>
+                                        <state key="normal" title="Музыка">
+                                            <color key="titleColor" red="1" green="0.16368016799999999" blue="0.093050582049999997" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fKT-XG-SBJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -158,6 +166,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="musicButton" destination="tJ8-v9-1yE" id="eSq-ec-Jgo"/>
+                        <outlet property="switchOutlet" destination="bDh-hH-AuK" id="NKB-5p-mCM"/>
                         <outlet property="tableViewOutlet" destination="a0i-4B-Aeb" id="m9e-7O-u50"/>
                         <outlet property="techButton" destination="O5G-xU-5Au" id="Ccb-tr-SsJ"/>
                     </connections>
